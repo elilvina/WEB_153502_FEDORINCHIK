@@ -1,0 +1,47 @@
+﻿@inject IDataService DataService
+@implements IDisposable
+
+<h1>Games</h1>
+
+@if (DataService.GameList is null || !DataService.Success)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var game in DataService.GameList!)
+			{
+				<tr>
+					<td>@game.Name</td>
+					<td>
+						<a class="btn btn-info" @onclick="() => GameSelected.Invoke(game.Id)"> <i class="fa-solid fa-magnifying-glass"></i> Подробно</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+
+@code {
+	[Parameter]
+	public Action<int> GameSelected { get; set; }
+
+	protected override void OnInitialized()
+	{
+		DataService.DataChanged += StateHasChanged;
+	}
+
+	public void Dispose()
+	{
+		DataService.DataChanged -= StateHasChanged;
+	}
+
+}

@@ -1,0 +1,39 @@
+﻿@page "/catalog"
+@page "/catalog/{genre}"
+@attribute [Authorize]
+@using WEB_153502_FEDORINCHIK.BlazorWasm.Components
+@using WEB_153502_FEDORINCHIK.Domain.Entities;
+@using Microsoft.AspNetCore.Authorization
+
+<PageTitle>Games</PageTitle>
+
+<GenreSelector SelectedGenre="@SelectedName" />
+<GameList GameSelected="FindClothes" />
+<Pager Genre="@Genre" TotalPages="@DataService.TotalPages" CurrentPage="@DataService.CurrentPage" />
+<GameDetails SelectedGame="@SelectedGame"/>
+
+@code {
+	[Inject]
+	public IDataService DataService { get; set; }
+	[Parameter] public string Genre { get; set; }
+	public string? SelectedName { get; set; }
+	public Game? SelectedGame { get; set; }
+
+	protected override async Task OnParametersSetAsync()
+	{
+		await DataService.GetGameListAsync(Genre);
+		if (Genre != null)
+			SelectedName = DataService?.Genres?.FirstOrDefault(c => c.NormalizedName.Equals(Genre))?.Name;
+		else SelectedName = "Все";
+	}
+
+	[Inject]
+	ILogger<Catalog> Logger { get; set; }
+
+	public void FindClothes(int id)
+	{
+		SelectedGame = DataService?.GameList?.FirstOrDefault(c => c.Id == id);
+		Logger.LogInformation($"<------ FindClothes called ------> ({SelectedGame?.Name})");
+		StateHasChanged();
+	}
+}

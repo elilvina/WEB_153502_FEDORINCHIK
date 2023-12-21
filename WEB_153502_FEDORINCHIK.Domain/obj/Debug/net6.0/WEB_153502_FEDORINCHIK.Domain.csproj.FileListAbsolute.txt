@@ -1,0 +1,11 @@
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\bin\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.deps.json
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\bin\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.dll
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\bin\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.AssemblyInfoInputs.cache
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.AssemblyInfo.cs
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.dll
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\refint\WEB_153502_FEDORINCHIK.Domain.dll
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\WEB_153502_FEDORINCHIK.Domain.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\WEB_153502_FEDORINCHIK\WEB_153502_FEDORINCHIK.Domain\obj\Debug\net6.0\ref\WEB_153502_FEDORINCHIK.Domain.dll

@@ -1,0 +1,40 @@
+﻿@using WEB_153502_FEDORINCHIK.Domain.Entities;
+
+<style>
+	.clothes-details-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.clothes-image {
+		flex: 0 0 auto;
+		margin-right: 20px;
+	}
+
+	.clothes-info {
+		flex: 1 1 auto;
+	}
+</style>
+
+
+@if (SelectedGame is not null)
+{
+	<div class="clothes-details-container">
+		<div class="clothes-image">
+			@if (!string.IsNullOrEmpty(SelectedGame.Path))
+			{
+				<img src="@SelectedGame.Path" alt="Clothes Image" />
+			}
+		</div>
+		<div class="clothes-info">
+			<h2>@SelectedGame.Name</h2>
+			<p>@SelectedGame.Description</p>
+			<p>Price: @SelectedGame.Price</p>
+		</div>
+	</div>
+}
+
+@code {
+	[Parameter]
+	public Game? SelectedGame { get; set; }
+}
